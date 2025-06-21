@@ -183,3 +183,10 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+  document.querySelectorAll('.faq-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const faqItem = toggle.parentElement;
+      faqItem.classList.toggle('faq-active');
+    });
+  });

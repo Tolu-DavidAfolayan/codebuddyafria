@@ -179,6 +179,8 @@ h6 {
   --background-color: #10058c;
 }
 
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1568,6 +1570,26 @@ section,
   font-size: 34px;
 }
 
+
+.faq-item .faq-content {
+  margin-top: 10px;
+}
+
+.faq-item.faq-active .faq-content {
+  display: block;
+}
+
+.faq-toggle {
+  cursor: pointer;
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.faq-active .faq-toggle {
+  transform: rotate(90deg);
+}
+
+
 .faq .content p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
@@ -1743,6 +1765,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
